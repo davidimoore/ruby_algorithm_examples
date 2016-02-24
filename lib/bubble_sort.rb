@@ -1,4 +1,4 @@
-class SortingAlgorithms
+class BubbleSort
   def self.bubble_sort(unsorted_array)
     n = unsorted_array.length
     loop do
