@@ -1,4 +1,4 @@
-require_relative '../../lib/binary_search.rb'
+require_relative '../lib/binary_search.rb'
 describe BinarySearch do
   context '.find_index_of_integer' do
     it 'quickly finds a number in an array' do

@@ -1,21 +1,22 @@
 class MergeSort
-  def run(unsorted_array)
-    return unsorted_array if unsorted_array.size <= 1
-    mid   = unsorted_array.size / 2
-    left  = unsorted_array[0, mid]
-    right = unsorted_array[mid, unsorted_array.size]
-    merge(run(left), run(right))
-  end
+  attr_reader
+  def merge(unsorted_array, low, mid, high)
+    auxilary_array = unsorted_array
 
-  def merge(left, right)
-    sorted = []
-    until left.empty? || right.empty?
-      if left.first <= right.first
-        sorted << left.shift
-      else
-        sorted << right.shift
+
+    i = low
+    j = mid + 1
+
+    (low...high).each_with_index do |num, k|
+      if i > mid;     unsorted_array[k] = auxilary_array[mid += 1]
+      elsif j > high; unsorted_array[k] = auxilary_array[mid += 1]
+      elsif auxilary_array[j] < auxilary_array[i];
+
       end
     end
-    sorted.concat(left).concat(right)
   end
 end
+
+
+
+

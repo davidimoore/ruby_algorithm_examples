@@ -1,4 +1,4 @@
-require_relative '../../lib/selection_sort'
+require_relative '../lib/selection_sort'
 
 describe SelectionSort do
   context '#run' do

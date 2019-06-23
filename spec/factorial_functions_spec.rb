@@ -1,4 +1,4 @@
-require_relative '../../lib/factorials'
+require_relative '../lib/factorials'
 describe Factorials do
   context '.iterative' do
     it 'returns the value of n!' do

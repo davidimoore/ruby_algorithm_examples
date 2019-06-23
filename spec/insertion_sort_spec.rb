@@ -1,4 +1,4 @@
-require_relative '../../lib/insertion_sort'
+require_relative '../lib/insertion_sort'
 describe InsertionSort do
   context 'run' do
     let(:array) {[22, 11, 99, 88, 9, 7, 42]}
